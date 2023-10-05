@@ -1,0 +1,756 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: url("../image/header-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(45, 110, 112);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.logo-line {
+    display: block;
+    width: 1px;
+    height: 21px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+    margin: 6px 30px 0px 16px;
+}
+
+.calling {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+.calling i {
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.calling:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+.nav-top {
+    position: relative;
+    padding-top: 7px;
+}
+
+.nav-top::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 1%;
+    width: 98%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-get {
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    background: rgba(255, 255, 255, 0.31);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out 0s;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+.btn-get:hover {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+}
+
+.banner {
+    min-height: 90vh;
+    align-items: center;
+}
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+}
+
+.banner p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    margin: 10px 0px 15px;
+}
+
+.btn-learn {
+    border: 1px solid rgb(111, 176, 72);
+    background: rgb(111, 176, 72);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-learn:hover {
+    background: transparent;
+    border: 1px solid rgb(111, 176, 72);
+    color: rgb(255, 255, 255);
+}
+
+.feature-section {
+    padding: 60px 0px 30px;
+}
+
+.feature-heading {
+    text-align: center;
+    margin: auto;
+}
+
+.feature-heading h1 {
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.feature-heading p {
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+.feature-heading span {
+    display: block;
+    height: 2px;
+    width: 65px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.feature-heading span::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    height: 100%;
+    width: 0%;
+    background: rgb(111, 176, 72);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.feature-heading span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 0%;
+    background: rgb(111, 176, 72);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.feature-section:hover .feature-heading span::after {
+    width: 50%;
+}
+
+.feature-section:hover .feature-heading span::before {
+    width: 50%;
+}
+
+.feature {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.feature h4 {
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 10px 0px;
+}
+
+.feature p {
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+.feature-icon {
+    font-size: 55px;
+    color: rgb(111, 176, 72);
+}
+
+.feature-icon i {
+}
+
+.v-line {
+    display: block;
+    height: 80px;
+    width: 1px;
+    margin: auto;
+    background: rgb(189, 207, 178);
+}
+
+.h-line {
+    display: block;
+    height: 0.5px;
+    width: 90px;
+    margin: auto;
+    background: rgb(189, 207, 178);
+}
+
+.t-shape {
+    margin: auto;
+}
+
+.feature-2nd {
+    margin-bottom: 30px;
+}
+
+.feature-section2 {
+    margin: 5px 0px 50px;
+}
+
+.icon-box {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(111, 176, 72);
+    margin-right: 7px;
+}
+
+.icon-box i {
+}
+
+.feature-2nd h4 {
+    display: inline;
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.feature-2nd p {
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    margin-top: 16px;
+}
+
+.template-section {
+    background: rgb(238, 241, 236);
+    padding-top: 50px;
+}
+
+.template-details {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.image-box img {
+}
+
+.template {
+}
+
+.template p {
+    margin-top: 12px;
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+.template h1 {
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.check {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.check-icon {
+    color: rgb(131, 167, 165);
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.check-icon i {
+}
+
+.check h6 {
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.template-section:hover .feature-heading span::after {
+    width: 50%;
+}
+
+.template-section:hover .feature-heading span::before {
+    width: 50%;
+}
+
+.client-section {
+    padding: 80px 0px;
+}
+
+.client-section h3 {
+    font-family: Merriweather, serif;
+    color: rgb(131, 167, 165);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.client-section h6 {
+    font-family: Merriweather, serif;
+    color: rgb(111, 176, 72);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.client-section p {
+    font-family: Merriweather, serif;
+    color: rgb(131, 167, 165);
+}
+
+.clent-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.clent-img img {
+    height: 100%;
+}
+
+.client {
+    min-height: 70vh;
+    align-items: center;
+}
+
+.map-section {
+    background: rgb(238, 241, 236);
+    padding: 50px 0px;
+}
+
+.map-section h1 {
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.map-section p {
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.m-details {
+    align-items: center;
+    justify-content: end;
+}
+
+.earth-img {
+}
+
+.earth-img img {
+}
+
+.plan-section {
+    padding: 35px 0px;
+}
+
+.plan {
+    margin-top: 30px;
+    border-right: 2px solid rgb(131, 167, 165);
+}
+
+.plan-details {
+    text-align: center;
+    padding: 0px;
+    border-bottom: 2px solid rgb(131, 167, 165);
+    border-top: 2px solid rgb(131, 167, 165);
+    border-left: 2px solid rgb(131, 167, 165);
+}
+
+.plan-details h5 {
+    color: rgb(111, 176, 72);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+.plan-details h1 {
+    margin: 10px 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: rgb(15, 95, 92);
+}
+
+.plan-details h6 {
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+}
+
+.plan-details p {
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    margin: 20px 0px;
+}
+
+.btn-plan {
+    padding: 15px 20px;
+    color: white;
+    background: rgb(111, 176, 72);
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-plan:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(131, 167, 165);
+}
+
+.plan-box {
+    padding: 28px 55px;
+}
+
+.plan-chart {
+    margin: auto;
+}
+
+.plan-section:hover .feature-heading span::after {
+    width: 50%;
+}
+
+.plan-section:hover .feature-heading span::before {
+    width: 50%;
+}
+
+.service-section {
+    padding: 30px 0px;
+}
+
+.feature-heading i {
+    font-size: 60px;
+    color: rgb(111, 176, 72);
+    margin-bottom: 12px;
+}
+
+.feature-heading h6 {
+    color: rgb(15, 95, 92);
+    margin-top: 25px;
+}
+
+.feature-heading h2 {
+    color: rgb(111, 176, 72);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.service-section:hover .feature-heading span::after {
+    width: 50%;
+}
+
+.service-section:hover .feature-heading span::before {
+    width: 50%;
+}
+
+.help-section {
+    padding: 30px 0px 60px;
+}
+
+.help-section:hover .feature-heading span::after {
+    width: 50%;
+}
+
+.help-section:hover .feature-heading span::before {
+    width: 50%;
+}
+
+.download-section {
+    background-image: url("../image/download-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 0px;
+    z-index: 0;
+    position: relative;
+}
+
+.download-section::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 229, 229, 0.95);
+    z-index: -1;
+}
+
+.download-section h1 {
+    color: rgb(15, 95, 92);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.download-section p {
+    margin-top: 3px;
+    color: rgb(131, 167, 165);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+.download {
+}
+
+.download-wrapper {
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 85px 0px 25px;
+}
+
+.footer-details-1 {
+}
+
+.footer-details-1 h1 {
+    color: rgb(15, 95, 92);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+}
+
+.footer-details-1 a {
+    color: rgb(127, 170, 168);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Roboto, sans-serif;
+}
+
+.footer-details-1 h5 {
+    color: rgb(15, 95, 92);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    background: rgb(238, 241, 236);
+    border: none;
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 43px 10px 10px;
+    color: rgb(131, 167, 165);
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+
+form input:focus {
+    outline: rgb(131, 167, 165) solid 1px;
+}
+
+input::placeholder {
+    color: rgb(131, 167, 165);
+}
+
+.footer-details-1 a i {
+    position: absolute;
+    right: 5%;
+    bottom: 17%;
+    font-size: 24px;
+    color: rgb(111, 176, 72);
+}
+
+.footer-details-2 {
+    margin-top: 72px;
+    justify-content: space-between;
+    border-top: 1px solid rgb(238, 241, 236);
+    padding-top: 30px;
+}
+
+.footer-details-2 h5 {
+    color: rgb(127, 170, 168);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+.footer-details-2 ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-details-2 ul li {
+    margin-left: 7px;
+}
+
+.footer-details-2 ul li .twitter {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: rgb(85, 172, 238);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.footer-details-2 ul li .facebook {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: rgb(59, 89, 152);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.footer-details-2 ul li .instagram {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: rgb(63, 114, 155);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.footer-details-2 ul li .dribble {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: rgb(234, 76, 137);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.footer-details-2 ul li .github {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: rgb(51, 51, 51);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.social {
+    padding: 0px;
+}
+
+.footer-details-1 ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-details-1 ul li a:hover {
+    color: rgb(111, 176, 72);
+}
+
+.footer-details-2 ul li .twitter:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 95, 92);
+}
+
+.footer-details-2 ul li .facebook:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 95, 92);
+}
+
+.footer-details-2 ul li .dribble:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 95, 92);
+}
+
+.footer-details-2 ul li .github:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 95, 92);
+}
+
+.footer-details-2 ul li .instagram:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(15, 95, 92);
+}
